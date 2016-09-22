@@ -1,0 +1,248 @@
+*{
+  font-family: "微軟正黑體","Microsoft JhengHei",'Source Sans Pro', sans-serif;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.login{
+  display: none;
+}
+.nav > li:hover{
+  background-color: #f9e406;
+}
+.item>a>img{
+  width: 75%;
+  margin: auto;
+}
+.item>img{
+  width: 75%;
+  margin: auto;
+}
+.carousel-inner{
+  margin-bottom: 15px;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  max-height: 550px;    /* Set slide height here */
+  opacity: 0.85;
+}
+.carousel-caption{
+  color: #FF206E;
+  -webkit-text-stroke: 0.5px #ffff00;
+}
+#tag{
+  min-height: 120px;
+}
+.facebook{
+  text-align: center;
+}
+.facebook-lg{
+  text-align: center;
+}
+.user-info {
+  border: 2px solid  #eaedf2;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 0 10px 20px 10px;
+  min-height: 200px;
+}
+.box:hover{
+  position: relative;
+  top: 4px;
+  left: 4px;
+}
+.modal-footer{
+  text-align: center;
+}
+.modal-header{
+  min-height: 40px;
+}
+.modal-body{
+  max-height: 400px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.box {
+  color: #433955;
+  margin-bottom: 20px;
+  min-height: 200px;
+  text-align: center;
+}
+.box img {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.box .box-heading {
+  max-height: 200px;
+  overflow: hidden;
+}
+.box .box-body {
+  border: 2px solid  #eaedf2;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 0 10px 20px 10px;
+  min-height: 120px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+}
+.navbar {
+  margin-bottom: 0;
+  margin-bottom: 20px;
+}
+.navbar-default {
+  background-color: #ffe900;
+  border-color: #f9e406;
+  background-image: linear-gradient(to bottom,#ffe900 0,#ffe900 100%);
+}
+.navbar-default .navbar-brand {
+  color: #ee245e;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #df255b;
+}
+.navbar-default .navbar-text {
+  color: #ee245e;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ee245e;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #df255b;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #df255b;
+  background-color: #f9e406;
+  background-image: linear-gradient(to bottom,#f9e406 0,#f9e406 100%);
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #df255b;
+  background-color: #f9e406;
+}
+.navbar-default .navbar-toggle {
+  border-color: #f9e406;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #f9e406;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ee245e;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ee245e;
+}
+.navbar-default .navbar-link {
+  color: #ee245e;
+}
+.navbar-default .navbar-link:hover {
+  color: #df255b;
+}
+/*.jumbotron {
+  background: url(../img/food-stock-photo-9.jpg) no-repeat center center;
+  background-size: cover;
+  min-height: 550px;
+  padding: 0;
+  text-align: center;
+}
+.jombo-text{
+  margin:0;
+}
+.jumbotron .tagline {
+  color: #ffff00;
+  font-size: 80px;
+  text-shadow: 10px 10px 20px #FF206E;
+}
+.jumbotron .lead {
+  color: #ffff00;
+  font-size: 30px;
+  text-shadow: 10px 10px 20px #FF206E;
+}
+.jumbotron [class*="col-"] {
+  height: 250px;
+  margin-top:15%;
+  margin-bottom:15%;
+  overflow: hidden;
+}*/
+@media only screen and (min-width: 1200px) {
+  .carousel-topic{
+    font-size: 60px;
+  }
+  .carousel-content{
+    font-size: 30px;
+  }
+  .carousel-inner>.item{
+    margin-bottom: 15px;
+  }
+}
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {
+
+}
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+}
+@media (max-width: 768px) {
+  .navbar-right form {
+    display: none;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ee245e;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #df255b;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #df255b;
+    background-color: #ead706;
+  }
+  .carousel-caption{
+  color: #FF206E;
+  -webkit-text-stroke: 0.2px #ffff00;
+}
+}
+@media (max-width: 568px) {
+  .jumbotron {
+    text-align: center;
+  }
+
+  footer {
+    text-align: center;
+  }
+  .carousel-caption>.btn{
+    font-size: 10px;
+  }
+  .carousel-topic{
+    font-size: 25px;
+  }
+  .carousel-content{
+    font-size: 15px;
+  }
+  .carousel-caption{
+  color: #FF206E;
+  -webkit-text-stroke: 0.2px #ffff00;
+}
+}

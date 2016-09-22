@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FedTime</title>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- load fontawesome -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/index(2).css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header navbar-default">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">FedTime</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">首頁 <span class="sr-only">(current)</span></a></li>
+            <li><a href="bestselect.html">編輯精選 </a></li>
+            <li><a href="bestchef.html">人氣大廚 </a></li>
+            <li><a href="localbest.html">區域美食 </a></li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search" id="search_tag" name="search_tag">
+            </div>
+            <button type="submit" class="btn btn-default" id="search_go" name="search_go">Search</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <p class="login navbar-text" id="fbnav"></p>
+            <button type="button" class="btn btn-warning navbar-btn login" onclick="location.href='profile.html'">我的首頁</button>
+            <button type="button" class="btn btn-warning navbar-btn logout" data-toggle="modal" data-target="#logincontent-fb">Login</button>
+            <button type="button" class="btn btn-warning navbar-btn login logoutbtn">Logout</button>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!--登入-->
+    <div class="modal fade" id="logincontent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h3 class="modal-title" id="myModalLabel"><strong>好食刻-服務條款</strong></h3>
+          </div>
+          <div class="modal-body provision" id="service_content">
+
+          </div>
+          <div class="modal-footer">
+            <input type="checkbox" id="comfirm" name="comfirm" value="1"/>我同意<br/><br/>
+            <div class="facebook">
+              <fb:login-button scope="public_profile,email" onlogin="checkLoginState(); document.location.reload();" size="xlarge">
+              Login With Facebook
+              </fb:login-button>
+              <div id="status">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="logincontent-fb" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h3 class="modal-title" id="myModalLabel"><strong>Log in with : </strong></h3>
+          </div>
+          <div class="modal-footer">
+            <div class="facebook-lg" >
+              <fb:login-button scope="public_profile,email" onlogin="checkLoginState();" size="xlarge">
+              Login With Facebook
+              </fb:login-button>
+              <div id="status">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 panel-item">
+                <div class="box">
+                    <div class="box-heading">
+                        <img src="img/festive-food-1388406500q51.jpg">
+                    </div>
+                    <div class="box-body">
+                        <h3>編輯精選</h3>
+                        <p>......</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 panel-item">
+                <div class="box">
+                    <div class="box-heading">
+                        <img src="img/food-712665_960_720.jpg">
+                    </div>
+                    <div class="box-body">
+                        <h3>人氣大廚</h3>
+                        <p>......</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 panel-item">
+                <div class="box">
+                    <div class="box-heading">
+                        <img src="img/Indonesian_Food.png">
+                    </div>
+                    <div class="box-body">
+                        <h3>區域美食</h3>
+                        <p>......</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 panel-item">
+                <div class="box">
+                    <div class="box-heading">
+                        <img src="img/festive-food-1388406500q51.jpg">
+                    </div>
+                    <div class="box-body">
+                        <h3>編輯精選</h3>
+                        <p>......</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 panel-item">
+                <div class="box">
+                    <div class="box-heading">
+                        <img src="img/food-712665_960_720.jpg">
+                    </div>
+                    <div class="box-body">
+                        <h3>人氣大廚</h3>
+                        <p>......</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 panel-item">
+                <div class="box">
+                    <div class="box-heading">
+                        <img src="img/Indonesian_Food.png">
+                    </div>
+                    <div class="box-body">
+                        <h3>區域美食</h3>
+                        <p>......</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 panel-item">
+                <div class="box">
+                    <div class="box-heading">
+                        <img src="img/festive-food-1388406500q51.jpg">
+                    </div>
+                    <div class="box-body">
+                        <h3>編輯精選</h3>
+                        <p>......</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 panel-item">
+                <div class="box">
+                    <div class="box-heading">
+                        <img src="img/food-712665_960_720.jpg">
+                    </div>
+                    <div class="box-body">
+                        <h3>人氣大廚</h3>
+                        <p>......</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 panel-item">
+                <div class="box">
+                    <div class="box-heading">
+                        <img src="img/Indonesian_Food.png">
+                    </div>
+                    <div class="box-body">
+                        <h3>區域美食</h3>
+                        <p>......</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid">
+            <p class="text-muted">
+                &copy;2016 NCNU-IM</br>
+                The Essential theme is developed, enhanced and maintained by NCNU-IM-Team5
+            </p>
+        </div>
+    </footer>
+    <!-- jQuery (Bootstrap 所有外掛均需要使用) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="js/iindex.js"></script>
+</body>
+</html>

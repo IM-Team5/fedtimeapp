@@ -1,0 +1,16 @@
+.title{
+  color: #FF206E;
+  text-shadow: 0px 0px 20px #ffff00;
+  font-size: 50px;
+}
+.lead{
+  font-size: 16px;
+}
+.blog-lead{
+  font-size: 22px;
+  text-align: center;
+}
+.blog{
+  font-size: 20px;
+  text-align: center;
+}
